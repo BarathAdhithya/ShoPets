@@ -11,6 +11,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
@@ -41,7 +42,7 @@ public class Cartcontroller {
  }
  int q;
  
- @RequestMapping(value="addtocart/{id}")
+ @RequestMapping(value={"addtocart/{id}","navproduct/addtocart/{id}"})
  public String addTOCart(@ModelAttribute("cart")Cart cart,BindingResult result,@PathVariable("id") int productid){
  
   log.info("Cart operation start================================================================================================================");
@@ -82,6 +83,18 @@ return "redirect:/Cart1";
   cartDAO.delete(cart);
   return "redirect:/Cart1";
  }
+ 
+ @RequestMapping("editorder/{id}")
+	public String editorder(@PathVariable("id") int id, @RequestParam("quantity") int q, HttpSession session) {
+		Cart cart = cartDAO.get(id);
+		Product p = productDAO.get(cart.getProductid());
+		cart.setQuantity(q);
+		cart.setPrice(q * p.getPrice());
+		cartDAO.save(cart);
+		session.setAttribute("cartsize", cartDAO.cartsize((Integer) session.getAttribute("userId")));
+		return "redirect:/Cart1";
+	}
+
  @RequestMapping(value="/Cart1")
  public ModelAndView cartpage(@ModelAttribute("cart") Cart cart,HttpSession session){
   ModelAndView mv= new ModelAndView("Cart1");

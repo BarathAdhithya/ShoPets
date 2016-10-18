@@ -34,33 +34,30 @@ width:100%;
   </style>
 
 </head>
-<body  style="background-color:#CCCCCC;">
+<body  style="background-color:">
 
 
- <div class="text-center" >
-  <h1 style="font-family:Georgia; font-size:40px;"><i>SHOPIN </i>
-    <img  src="https://www.sitewelder.com/art2012/logo-big-shopping.png" alt="logo" width="60px" height="60px" align="left" >
-  <img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/768px-F_icon.svg.png" alt="fb" width="30px" height="30px" align="right" >
-  <img  src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Twitter_bird_logo_2012.svg/1259px-Twitter_bird_logo_2012.svg.png" alt="twitter" width="30px" height="30px" align="right" >
-  <img  src="http://icons.iconarchive.com/icons/danleech/simple/1024/linkedin-icon.png" alt="linkedin" width="30px" height="30px" align="right" >
-  </h1>
+ 
   
-  </div>
-  
-  <nav class="navbar navbar-inverse">
+  <nav class="navbar navbar-inve">
   <div class="container-fluid"> 
-  <div class="navbar-header" class=" pull-left">
-     <a class="navbar-brand" style="font-size:15px;" href="#"><span class="glyphicon glyphicon-user"></span> WELCOME ${msg} </a>
-    </div>
-     <ul class="nav navbar-nav navbar-right" style="margin-bottom:0px;">
+   <div class="navbar-header">
+      <a class="navbar-brand" href="http://localhost:8080/ShoppingCart"><span style="font-family:arial;color:indigo;">ShoppingCart</span></a>
+      <a class="navbar-brand" href="http://localhost:8080/ShoppingCart"><span style="margin-left:0px;"><img class="image-rounded" src="http://www.avalisa.com/images/detailed/7/avalisa-canvas-wall-art-navy-dog-face.jpg" width=25px height=25px></span></a>
+</div>
+  
+      <ul class="nav navbar-nav nav-tabs" style="margin-left:350px;">
       
       <li><a href="Admin">HOME</a></li>
-      <li><a href="REGISTER">REGISTER</a></li>
-      <!-- <li><a href="LOGIN">LOGIN</a></li> -->
+      <!-- <li><a href="REGISTER">REGISTER</a></li>
+      <li><a href="LOGIN">LOGIN</a></li>
 	  <li><a href="ABOUTUS">ABOUT US</a></li>
-	  <li><a href="CONTACTUS">CONTACT US</a></li>
+	  <li><a href="CONTACTUS">CONTACT US</a></li> -->
 	  <li><a href="perform_logout">LOGOUT</a></li>
     </ul>
+    <div class="navbar-header" style="margin-left:300px">
+     <a class="navbar-brand" style="font-size:15px;" ><span class="glyphicon glyphicon-user"></span> WELCOME ADMIN </a>
+    </div>
    </div>
   </nav>
  <!--  <div class="col-xs-8 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
@@ -69,12 +66,14 @@ width:100%;
     <li><a href="Category">Category</a></li>
      <li><a href="Supplier">Supplier</a></li>
   </ul>
+   <a class="navbar-brand" href="http://localhost:8080/ShoppingCart"><span style="margin-left:90px;"><img class="image-rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/768px-F_icon.svg.png" width=25px height=25px></span></a>
+    <a class="navbar-brand" href="http://localhost:8080/ShoppingCart"><span style="margin-left:0px;"><img class="image-rounded" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Twitter_bird_logo_2012.svg/1259px-Twitter_bird_logo_2012.svg.png" width=25px height=25px></span></a>
   </div> --> 
   
   
   <div class="container">
           <div class="col-xs-8 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
-          <ul class="nav nav-pills nav-justified">
+          <ul class="nav nav-pills nav-justified" style="margin-left:-55px">
      <li><a href="Product">Product</a></li>
      <li><a href="Category">Category</a></li>
      <li><a href="Supplier">Supplier</a></li>
@@ -104,48 +103,7 @@ width:100%;
 </c:when>
 </c:choose>
    
-  <div class="container-fluid">
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item">
-        <img  src="http://static1.shop.indiatimes.com/imgbn/PhoneswithDeals.jpg" alt="mobile" >
-      </div>
-    
-
-	<div class="item active">
-        <img  src="http://2.bp.blogspot.com/-BDvmGGhmPVE/VDkDCz8wFZI/AAAAAAAAAT0/k21MsFYTCHE/s1600/Deals-on-Laptop.png" alt="mobile">
-      </div>
-
-     
-      <div class="item">
-        <img  src="http://www.cukti.com/image/product_image/7466d49c-4665-4ad3-93f2-83c4d58f016a.jpg" alt="mobile" >
-      </div>
-
-      <div class="item">
-        <img src="http://blogs-images.forbes.com/geoffreymorrison/files/2016/05/Acer-Switch-V-10-Opener.jpg" alt="mobile">
-      </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
+  
  <%@include file="Footer.jsp"%> 
  
 </body>

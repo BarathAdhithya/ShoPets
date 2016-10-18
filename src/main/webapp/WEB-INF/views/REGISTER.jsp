@@ -18,27 +18,68 @@
   <style>
   footer {
     
-    margin-top: 350px;
+    margin-top: 50px;
     
 } 
 body {
 width:100%;
 }
+.dropdown-toggle {
+    background-color: white;
+    
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+/* .dropdown-toggle {
+    position: relative;
+    display: inline-block;
+} */
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-menu {
+    display: none;
+   
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-menu a {
+    color: black;
+    padding: 6px 8px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-menu a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown1:hover .dropdown-toggle {
+    background-color: #3e8e41;
+}
   </style>
 </head>
-<body style="background-color:#CCCCCC;">
-<div class="text-center" >
-  <h1 style="font-family:Georgia; font-size:40px;"><i>SHOPIN </i>
-    <img  src="https://www.sitewelder.com/art2012/logo-big-shopping.png" alt="logo" width="60px" height="60px" align="left" >
-  <img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/768px-F_icon.svg.png" alt="fb" width="30px" height="30px" align="right" >
-  <img  src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Twitter_bird_logo_2012.svg/1259px-Twitter_bird_logo_2012.svg.png" alt="twitter" width="30px" height="30px" align="right" >
-  <img  src="http://icons.iconarchive.com/icons/danleech/simple/1024/linkedin-icon.png" alt="linkedin" width="30px" height="30px" align="right" >
-  </h1>
-  
-  </div>
-  <nav class="navbar navbar-inverse">
+<body style="background-color:;">
+
+  <nav class="navbar navbar-inve">
   <div class="container-fluid"> 
-     <ul class="nav navbar-nav navbar-right" style="margin-bottom:0px;">
+   <div class="navbar-header">
+      <a class="navbar-brand" href="http://localhost:8080/ShoppingCart"><span style="font-family:arial;color:indigo;">ShoppingCart</span></a>
+      <a class="navbar-brand" href="http://localhost:8080/ShoppingCart"><span style="margin-left:0px;"><img class="image-rounded" src="http://www.avalisa.com/images/detailed/7/avalisa-canvas-wall-art-navy-dog-face.jpg" width=25px height=25px></span></a>
+</div>
+   <ul class="nav navbar-nav nav-tabs" style="margin-left:210px;">
+      
        <li class="dropdown" >
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Category
         <span class="caret"></span></a>
@@ -50,6 +91,7 @@ width:100%;
 					</c:forEach>
         </ul>
       </li>
+      
       
     
       <li><a href="HOME">HOME</a></li>
@@ -66,9 +108,13 @@ width:100%;
 </sec:authorize>
 					  
    </ul>
+   
+    <a class="navbar-brand" href="http://localhost:8080/ShoppingCart"><span style="margin-left:250px;"><img class="image-rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/768px-F_icon.svg.png" width=25px height=25px></span></a>
+    <a class="navbar-brand" href="http://localhost:8080/ShoppingCart"><span style="margin-left:0px;"><img class="image-rounded" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Twitter_bird_logo_2012.svg/1259px-Twitter_bird_logo_2012.svg.png" width=25px height=25px></span></a>
+    <!-- <a class="navbar-brand" href="http://localhost:8080/ShoppingCart"><span style="margin-left:0px;"><img class="image-rounded" src="http://icons.iconarchive.com/icons/danleech/simple/1024/linkedin-icon.png" width=25px height=25px></span></a> -->
    </div>
   </nav>
- 
+ <br><br>
   <section id="content">
 			<c:url var="addAction" value="adduser"></c:url>
 			<form:form action="${addAction}" commandName="user"
@@ -81,9 +127,9 @@ width:100%;
 			    		<h3 class="panel-title" style="text-align:center;">Registration Form</h3>
 			 			</div>
 			 			<div class="panel-body">
-			    		<%-- <form role="form"> --%>
+			    		 <form role="form">
 
-
+<br>
 <div class="form-group">
   <label class="col-md-4 control-label" for="username">User name</label>  
   <div class="col-md-6">
@@ -92,6 +138,7 @@ width:100%;
     
   </div>
 </div>
+<br><br>
 
 <!-- Text input-->
 <div class="form-group">
@@ -102,7 +149,7 @@ width:100%;
     
   </div>
 </div>
-
+<br><br>
 <!-- Text input-->
 <div class="form-group">
   <label class="col-md-4 control-label" for="confirmpassword">Confirm Password</label>  
@@ -113,7 +160,7 @@ width:100%;
   </div>
 </div>
 
-
+<br><br>
 <!-- Text input-->
 <div class="form-group">
   <label class="col-md-4 control-label" for="email">Email</label>  
@@ -122,7 +169,7 @@ width:100%;
     
   </div>
 </div>
-
+<br><br>
 
 <!-- Text input-->
 <div class="form-group">
@@ -133,14 +180,16 @@ width:100%;
     
   </div>
 </div>
-
+<br><br>
 </div>
 
 <div class="form-group">
 <div class="col-xs-8 col-sm-6 col-md-4 col-sm-offset-2 col-md-offset-4">
-<input type="submit" value="Register" class="btn btn-info btn-block"><a href="LOGIN"></a>
+<input type="submit" value="Register" class="btn btn-info btn-block">
 </div>
 </div>
+<br><br>
+<form>
 </div>
 
 </div>
@@ -205,6 +254,6 @@ width:100%;
 		</section>
 		
 	</div>  --%>
-	
+	 <%@include file="Footer.jsp"%>		
 </body>
 </html>

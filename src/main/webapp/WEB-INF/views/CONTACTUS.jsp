@@ -36,18 +36,8 @@ width:100%;
 </style>
 </head>
 
-<body style="background-color:#CCCCCC;">
+<body style="background-color:">
  <%@include file="Header.jsp"%> 
-<div class="jumbotron jumbotron-sm">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-lg-12">
-                <h1 class="h1">
-                    Contact us <small>Feel free to contact us</small></h1>
-            </div>
-        </div>
-    </div>
-</div>
 <div class="container">
     <div class="row">
         <div class="col-md-8">
@@ -99,16 +89,16 @@ width:100%;
             <form>
             <legend><span class="glyphicon glyphicon-globe"></span> Our office</legend>
             <address>
-                <strong>Twitter, Inc.</strong><br>
-                795 Folsom Ave, Suite 600<br>
-                San Francisco, CA 94107<br>
+                <strong>NIIT Inc.</strong><br>
+                Kukatpally<br>
+               
                 <abbr title="Phone">
                     P:</abbr>
-                (123) 456-7890
+                (044) 456-7890
             </address>
             <address>
                 <strong>Full Name</strong><br>
-                <a href="mailto:#">first.last@example.com</a>
+                <a href="mailto:#">youmailbarath@gmail.com</a>
             </address>
             </form>
         </div>

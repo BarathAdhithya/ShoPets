@@ -14,19 +14,16 @@ padding-top:0px;
 }
 </style>
 
-<body style="background-color:#CCCCCC;">
-<div class="text-center" >
-  <h1 style="font-family:Georgia; font-size:40px;"><i>SHOPIN </i>
-    <img  src="https://www.sitewelder.com/art2012/logo-big-shopping.png" alt="logo" width="60px" height="60px" align="left" >
-  <img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/768px-F_icon.svg.png" alt="fb" width="30px" height="30px" align="right" >
-  <img  src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Twitter_bird_logo_2012.svg/1259px-Twitter_bird_logo_2012.svg.png" alt="twitter" width="30px" height="30px" align="right" >
-  <img  src="http://icons.iconarchive.com/icons/danleech/simple/1024/linkedin-icon.png" alt="linkedin" width="30px" height="30px" align="right" >
-  </h1>
-  
+<body style="background-color:">
+
   </div>
-  <nav class="navbar navbar-inverse">
+  <nav class="navbar navbar-inve">
   <div class="container-fluid"> 
-     <ul class="nav navbar-nav navbar-right" style="margin-bottom:0px;">
+  <div class="navbar-header">
+      <a class="navbar-brand" href="HOME"><span style="font-family:arial;color:indigo;">ShoppingCart</span></a>
+      <a class="navbar-brand" href="http://localhost:8080/ShoppingCart"><span style="margin-left:0px;"><img class="image-rounded" src="http://www.avalisa.com/images/detailed/7/avalisa-canvas-wall-art-navy-dog-face.jpg" width=25px height=25px></span></a>
+</div>
+     <ul class="nav navbar-nav nav-tabs" style="margin-left:210px;">
        <li class="dropdown" >
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Category
         <span class="caret"></span></a>
@@ -54,6 +51,9 @@ padding-top:0px;
 </sec:authorize>
 					  
    </ul>
+    <a class="navbar-brand" href="http://localhost:8080/ShoppingCart"><span style="margin-left:250px;"><img class="image-rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/768px-F_icon.svg.png" width=25px height=25px></span></a>
+    <a class="navbar-brand" href="http://localhost:8080/ShoppingCart"><span style="margin-left:0px;"><img class="image-rounded" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Twitter_bird_logo_2012.svg/1259px-Twitter_bird_logo_2012.svg.png" width=25px height=25px></span></a>
+    <!-- <a class="navbar-brand" href="http://localhost:8080/ShoppingCart"><span style="margin-left:0px;"><img class="image-rounded" src="http://icons.iconarchive.com/icons/danleech/simple/1024/linkedin-icon.png" width=25px height=25px></span></a> -->
    </div>
   </nav>
   <c:choose>
